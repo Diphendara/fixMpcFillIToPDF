@@ -17,7 +17,7 @@ total_imagenes = len(imagenes)
 for i, nombre_archivo in enumerate(imagenes, start=1):
     ruta_imagen = os.path.join(input_folder, nombre_archivo)
     imagen = Image.open(ruta_imagen)
-    
+
     ancho, alto = imagen.size
     # Definir la caja para recortar: (izquierda, arriba, derecha, abajo)
     caja = (borde, borde, ancho - borde, alto - borde)
